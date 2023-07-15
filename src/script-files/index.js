@@ -14,9 +14,8 @@ const headerTabs = document.querySelector(".header-items");
 const homePage = document.querySelector(".home-tab");
 const menuPage = document.querySelector(".menu-tab");
 const contactPage = document.querySelector(".contact-tab");
-console.log(`contact element is ${homePage}`)
+
 headerTabs.addEventListener("click", (event) => {
-     console.log(event.target)
      // First remove previous content of the page
      removePageContent();
 

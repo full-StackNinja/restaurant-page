@@ -11,7 +11,7 @@ export default function loadContactPage() {
      mapContainer.classList.add("map-container");
 
      contactAddress.innerHTML = "Address: New Gazalli Colony, Lahore, Punjab Pakistan";
-     // console.log(`my api key is ${process.env.API_KEY}`)
+     
      setTimeout(() => {
           loadGoogleMapsApi({
                key: process.env.API_KEY,

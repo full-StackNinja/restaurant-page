@@ -1,3 +1,4 @@
+// import required assets
 import woodenBoard from "../assets/menu-page/wooden-board.jpg";
 import grilledSalmonSalad from "../assets/menu-page/grilled-salmon-salad.jpg";
 import grilledHarissaChicken from "../assets/menu-page/grilled-harissa-chicken.jpeg";
@@ -5,6 +6,7 @@ import grilledMushroomSalad from "../assets/menu-page/Grilled Mushroom Antipasto
 import grilledRomaineSalad from "../assets/menu-page/Grilled Romaine Salad.jpeg";
 import grilledSteaks from "../assets/menu-page/Grilled Steaks Recipe.jpg";
 import grilledWarmMushroomSalad from "../assets/menu-page/Warm Mushroom Salad with Sesame Dressing.jpg";
+
 const menuPageAssets = [
      {
           dishBoard: woodenBoard,
@@ -43,7 +45,7 @@ const menuPageAssets = [
           dishDescription: "Grilled Warm Mushroom Salad: A delightful fusion of tender grilled mushrooms and fresh greens, offering a harmonious balance of smoky flavors and crisp textures. This enticing salad is a culinary journey that leaves you yearning for its satisfying blend with every bite.",
      },
 ];
-console.log("dish board url", menuPageAssets[0].dishBoard);
+// Load menu page upon user tabbing of the "Menu" Tab
 export default function LoadMenuPage() {
      const content = document.querySelector(".content");
      for (let dish of menuPageAssets) {
@@ -74,6 +76,7 @@ export default function LoadMenuPage() {
           content.appendChild(menuDish);
      }
 
+     // Add restaurant name in menu page
      const hangingBoardContainer = document.createElement("div");
      hangingBoardContainer.classList.add("hanging-board-container");
 
