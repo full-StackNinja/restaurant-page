@@ -1,22 +1,32 @@
-import "../stylesheets/normalize.css";
-import "../stylesheets/index-style.css";
+import loadMainPage from "./load-main-page.js";
+import removePageContent from "./remove-content.js";
+import loadHomePage from "./home-page.js";
+import loadMenuPage from "./menu-page.js";
+import loadContactPage from "./contact-page.js";
 
-// Create IIFE(module) to create header section of the page...
-(function headerSectionCreator() {
-     const header = document.createElement("div");
-     const body = document.querySelector("body");
-     const homeBtn = document.createElement("button");
-     const menuBtn = document.createElement("button");
-     const contactBtn = document.createElement("button");
-     header.classList.add("header");
-     homeBtn.classList.add("home-btn");
-     homeBtn.innerHTML = "Home";
-     menuBtn.classList.add("menu-btn");
-     menuBtn.innerHTML = "Menu";
-     contactBtn.classList.add("contact-btn");
-     contactBtn.innerHTML = "Contact Us";
-     header.append(homeBtn);
-     header.append(menuBtn);
-     header.append(contactBtn);
-     body.insertBefore(header, body.firstChild);
-})();
+// Load the main page...
+loadMainPage();
+
+// Then load home page at start
+loadHomePage();
+// Listen to the header tabs to load corresponding page upon click of corresponding tab
+const headerTabs = document.querySelector(".header-items");
+const homePage = document.querySelector(".home-tab");
+const menuPage = document.querySelector(".menu-tab");
+const contactPage = document.querySelector(".contact-tab");
+console.log(`contact element is ${homePage}`)
+headerTabs.addEventListener("click", (event) => {
+     console.log(event.target)
+     // First remove previous content of the page
+     removePageContent();
+
+     // Then load user required page
+     if (event.target === homePage) {
+          loadHomePage();
+     } else if (event.target === menuPage) {
+          loadMenuPage();
+     } else if (event.target === contactPage) {
+          console.log("it page contact page?",event.target === contactPage)
+          loadContactPage();
+     }
+});

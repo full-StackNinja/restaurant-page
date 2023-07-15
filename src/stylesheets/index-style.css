@@ -3,32 +3,66 @@
 }
 
 body {
+     background: url(../assets/main-page/wood-texture.jpg);
+     background-position: center;
+     background-size: cover;
      width: 100vw;
-     height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
-     background-color: #fbbf24;
 }
 
-.header {
-     flex: 1;
+body .header-items {
+     pointer-events: none;
      height: 100px;
-     border: 1px solid #ccc;
      text-align: center;
      line-height: 100px;
      vertical-align: middle;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
 }
 
-.header button {
-     margin: 8px;
-     padding: 8px 16px;
-     border-radius: 8px;
-     border: 1px solid #ccc;
+.header-items li {
+     pointer-events: none;
+     font-size: 40px;
+     font-weight: 700;
+     list-style: none;
 }
 
-.content {
-     background-color: #b45309;
-     width: 100vw;
-     height: calc(100vh - 100px);
+li a {
+     color: #f43f5e;
+     cursor: pointer;
+     pointer-events: all;
+     transition: color 1s;
+}
+
+.menu-link a {
+     border-right: 1px solid #f43f5e;
+     border-left: 1px solid #f43f5e;
+     padding: 0 20px;
+}
+
+li a:hover {
+     color: #3b82f6;
+}
+
+li a:focus {
+     color: #3b82f6;
+     /* border-bottom: 2px solid #ccc; */
+}
+
+body .content {
+     width: 50vw;
+     margin: 0 auto;
+     display: flex;
+     padding: 20px;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 20px;
+}
+
+img {
+     width: 45vw;
+     height: 45vw;
 }

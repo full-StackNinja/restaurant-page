@@ -1,0 +1,47 @@
+.menu-dish{
+     width: 45vw;
+     height: 400px;
+     position: relative;
+     margin-bottom: 20px;
+}
+
+.menu-dish .dish-board{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     border-radius: 50%;
+     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-dish .dish-food{
+     position: absolute;
+     top: 20px;
+     left: calc(25vw / 2);
+     width: 20vw;
+     height: 200px;
+     margin: 0;
+     border-radius: 50%;
+}
+
+.menu-dish .dish-name{
+     position: absolute;
+     top: 220px;
+     text-align: center;
+     margin: 5px;
+     left: calc(25vw / 2);
+     font-size: 20px;
+     font-weight: 700;
+     color: #cbd5e1;
+}
+
+.menu-dish .dish-description{
+     position: absolute;
+     top: calc(220px + 20px);
+     left: calc(25vw / 2);
+     right: calc(25vw / 2);
+     text-align: center;
+     font-size: 16px;
+     color: #a3e635;
+}

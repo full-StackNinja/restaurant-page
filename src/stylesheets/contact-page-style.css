@@ -1,0 +1,20 @@
+.contact-container {
+     width: 40vw;
+     height: 80vh;
+     margin: 0 auto;
+     /* background-color: #ccc; */
+}
+
+.map-container {
+     width: 90%;
+     height: 80%;
+     margin: 0 auto;
+}
+
+.contact-container p {
+     color: #ccc;
+     font-size: 1.5rem;
+     font-weight: 700;
+     margin-left: 20px;
+
+}

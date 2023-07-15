@@ -1,0 +1,28 @@
+@font-face {
+     font-family: myFont;
+     src: url("../assets/fonts/Grechen_Fuemen/GrechenFuemen-Regular.ttf");
+}
+
+.hanging-board-container {
+     position: absolute;
+     width: 400px;
+     height: 200px;
+     top: 100px;
+     left: 20px;
+     margin: 0;
+     /* border: 1px solid ; */
+}
+
+.hanging-board-container p {
+     position: absolute;
+     font-size: 70px;
+     font-weight: 700;
+     font-family: myFont;
+     color: #22c55e;
+     margin: 0;
+     padding: 10px;
+     /* border: 2px dotted #ccc; */
+     background-color: rgba(0, 0, 0, 0.4);
+     border-radius: 50%;
+     box-shadow: 0 0 3px 3px rgba(34, 197, 94, 0.5);
+}
