@@ -8,19 +8,23 @@ html{
 body {
      background: url(../assets/main-page/wood-texture.jpg);
      background-position: center;
-     background-size: cover;
-     width: 100vw;
+     background-size:cover;
+     background-repeat: no-repeat;
+     max-width: 100vw;
+     height: auto;
      display: flex;
      flex-direction: column;
      justify-content: center;
      padding: 0 1rem;
+     gap: 100px;
 }
 
 body .header-items {
+     flex: 0 0 1;
      pointer-events: none;
-     max-height: 100px;
+     height: 10vh;
      text-align: center;
-     line-height: 100px;
+     line-height: 10vh;
      vertical-align: middle;
      display: flex;
      justify-content: center;
