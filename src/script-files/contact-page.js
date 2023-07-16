@@ -1,3 +1,4 @@
+// Import required plugins and modules
 const loadGoogleMapsApi = require("load-google-maps-api");
 
 export default function loadContactPage() {
@@ -10,8 +11,7 @@ export default function loadContactPage() {
      contactContainer.classList.add("contact-container");
      mapContainer.classList.add("map-container");
 
-     contactAddress.innerHTML = "Address: New Gazalli Colony, Lahore, Punjab Pakistan";
-     
+     contactAddress.innerHTML = "Address: The Anarkali Street, Lahore, Punjab Pakistan";
      setTimeout(() => {
           loadGoogleMapsApi({
                key: process.env.API_KEY,

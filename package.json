@@ -7,24 +7,28 @@
           "test": "echo \"Error: no test specified\" && exit 1",
           "start": "webpack serve --open",
           "build": "webpack",
-          "publishPage": "git subtree push --prefix dist origin gh-pages"
+          "publishPage": "git subtree push --prefix dist origin gh-pages",
+          "deploy": "gh-pages -d dist"
      },
      "keywords": [],
      "author": "",
      "license": "ISC",
      "devDependencies": {
           "css-loader": "^6.8.1",
+          "dotenv": "^16.3.1",
+          "gh-pages": "^5.0.0",
           "html-webpack-plugin": "^5.5.3",
           "html-webpack-tags-plugin": "^3.0.2",
           "mini-css-extract-plugin": "^2.7.6",
+          "node-rsa": "^1.1.1",
           "style-loader": "^3.3.3",
           "webpack": "^5.88.1",
           "webpack-cli": "^5.1.4",
           "webpack-dev-server": "^4.15.1"
      },
      "dependencies": {
+          "dotenv-webpack": "^8.0.1",
           "load-google-maps-api": "^2.0.2",
-          "terser-webpack-plugin": "^5.3.9",
-          "dotenv-webpack": "^8.0.1"
+          "terser-webpack-plugin": "^5.3.9"
      }
 }
