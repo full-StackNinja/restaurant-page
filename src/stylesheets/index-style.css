@@ -2,6 +2,9 @@
      box-sizing: border-box;
 }
 
+html{
+     font-size: 16px
+}
 body {
      background: url(../assets/main-page/wood-texture.jpg);
      background-position: center;
@@ -10,22 +13,23 @@ body {
      display: flex;
      flex-direction: column;
      justify-content: center;
+     padding: 0 1rem;
 }
 
 body .header-items {
      pointer-events: none;
-     height: 100px;
+     max-height: 100px;
      text-align: center;
      line-height: 100px;
      vertical-align: middle;
      display: flex;
      justify-content: center;
-     gap: 20px;
+     gap: 1rem;
 }
 
 .header-items li {
      pointer-events: none;
-     font-size: 40px;
+     font-size: 2rem;
      font-weight: 700;
      list-style: none;
 }
@@ -40,7 +44,7 @@ li a {
 .menu-link a {
      border-right: 1px solid #f43f5e;
      border-left: 1px solid #f43f5e;
-     padding: 0 20px;
+     padding: 0 1rem;
 }
 
 li a:hover {
@@ -49,17 +53,16 @@ li a:hover {
 
 li a:focus {
      color: #3b82f6;
-     /* border-bottom: 2px solid #ccc; */
 }
 
 body .content {
      width: 50vw;
      margin: 0 auto;
      display: flex;
-     padding: 20px;
+     padding: 1rem;
      justify-content: center;
      flex-wrap: wrap;
-     gap: 20px;
+     gap: 1rem;
 }
 
 img {
